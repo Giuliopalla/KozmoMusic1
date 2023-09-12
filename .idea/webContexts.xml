@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/home.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productAdd.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/products.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profiles.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/admin/profileshowall.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/alert.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/head.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/orders/newOrder.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/orders" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/orders/orderList.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/orders" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/paginatorHome.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/product/productupdate.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/product" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/profile/profileupdate.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/profile/showorder.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/site/siteproduct.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/site" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/home.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>

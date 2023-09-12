@@ -1,0 +1,156 @@
+.app {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.topbar {
+    height: 10vh;
+    width: 100%;
+}
+
+.topbar {
+    background-color: var(--sfondo);
+    padding: 0.5rem;
+}
+
+.topbar > .account {
+    display: none;
+}
+
+.account {
+    color: var(--scritta);
+}
+
+.topbar > .command {
+    flex: 1;
+}
+
+.topbar > * {
+    margin-right: 8px;
+}
+
+.topbar > svg {
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: var(--sfondo);
+    flex-basis: 40vh;
+    transition: all .3s ease-in-out;
+}
+
+.sidebar.collapse {
+    transform: translate3d(-40vh, 0, 0);
+}
+
+.menu > a {
+    text-decoration: none;
+    color: var(--scritta);
+    padding: 1rem;
+}
+
+.menu > a:hover {
+    background-color: var(--secondario);
+    color: var(--primario);
+}
+
+.menu > img {
+    cursor: pointer;
+}
+
+.content {
+    background-color: white;
+    flex: 1;
+    transition: all .3s ease-in-out;
+}
+
+
+.content.full-width {
+    margin-left: -40vh;
+}
+
+.info {
+    width: 100%;
+    text-align: right;
+    font-style: italic;
+    font-weight: normal;
+    padding-right: .5rem;
+    clear: both;
+    background-color: var(--sfondo);
+    padding-bottom: .5rem;
+}
+
+.body {
+    flex-grow: 1;
+}
+
+.body > div {
+    background-color: white;
+    box-shadow: -9px -4px 12px 3px var(--sfondo);
+    margin: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.body > div > h4 {
+    margin: 0;
+    padding: 1rem;
+    color: var(--scritta);
+    background-color: var(--secondario);
+}
+
+.body > div > h2 {
+    color: var(--primario);
+    justify-self: center;
+    font-size: 3rem;
+}
+
+.body > div > h2:hover {
+    transform: scale3d(1.15, 1.15, 1.15);
+}
+
+nav ul {
+    height: 40vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.account {
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+fieldset {
+    background-color: var(--scritta);
+    height: fit-content;
+}
+
+.table {
+    background-color: var(--scritta);
+    border: 1px solid var(--primario);
+    height: fit-content;
+    width: 100%;
+}
+
+.product-form > * {
+    margin-bottom: .1rem;
+}
+
+.tabella {
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.search {
+    background-color: var(--scritta);
+}
+
+
+@media screen and (min-width: 769px) {
+    .topbar > .account {
+        display: block;
+    }
+
+
+}

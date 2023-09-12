@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Cardo;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Cardo-Regular.ttf")
+}
+
+@font-face {
+    font-family: Cardo;
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Cardo-Italic.ttf")
+}
+
+@font-face {
+    font-family: Cardo;
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/Cardo-Bold.ttf")
+}
+
+:root {
+    font-family: Cardo, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(16px, 2vw, 24px);
+    --primario: #2B2626;
+    --sfondo: #91818A;
+    --secondario: #468C98;
+    --scritta: #FFFDCD;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-y {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.grid-inline {
+    display: inline-flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.cell {
+    flex-basis: 100%;
+}
+
+.field {
+    display: inline-flex;
+    align-items: center;
+}
+
+.field > input, .field > select, .field > textarea {
+    width: 100%;
+}
+
+.field > input[disabled], .field > select[disabled], .field > textarea[disabled] {
+    background-color: darkgrey;
+}
+
+.btn {
+    padding: 8px;
+    border: 1px solid var(--primario);
+    cursor: pointer;
+    background-color: var(--sfondo);
+    color: var(--scritta);
+
+}
+
+.btn:hover {
+    background-color: var(--secondario);
+}
+
+
+.table {
+    border-collapse: collapse;
+
+}
+
+.table > thead {
+    display: none;
+}
+
+.table .mezzo{
+    display: none;
+}
+
+.table tr {
+    border: 1px solid var(--primario);
+    margin-bottom: .5rem;
+    padding: .5rem;
+    display: block;
+}
+
+.table > tbody td {
+    display: block;
+    border-bottom: 1px solid var(--primario);
+    text-align: right;
+    padding-left: 20px;
+}
+
+
+.table > tbody td:before {
+    content: attr(data-head);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.paginator {
+    list-style-type: none;
+}
+
+.paginator > li {
+    border: 1px solid;
+    padding: .5rem;
+}
+.notification{
+    position:relative;
+    color: var(--primario);
+    border-radius:10px;
+    padding:.2rem;
+    margin-bottom: .2rem;
+}
+
+.notification.danger{
+    background-color: red;
+}
+.notification .close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    fill: white;
+}
+
+.paginator{
+    list-style-type: none;
+}
+
+.paginator >li{
+    border: 1px solid;
+    padding: .5rem;
+}
+
+.paginator>li>a{
+    text-decoration: none;
+}
+
+.errMsg{
+    color: red;
+    display: block;
+    font-size: .5rem;
+}
+
+@media screen and (min-width: 769px) {
+    .w10 {
+        flex-basis: 10%;
+    }
+
+    .w25 {
+        flex-basis: 25%;
+    }
+
+    .w33 {
+        flex-basis: 33%;
+    }
+
+    .w40 {
+        flex-basis: 40%;
+    }
+
+    .w50 {
+        flex-basis: 50%;
+    }
+
+    .w75 {
+        flex-basis: 75%;
+    }
+
+    .w80 {
+        flex-basis: 80%;
+    }
+
+    .w100 {
+        flex-basis: 100%;
+    }
+
+
+    .table > thead {
+        display: table-row-group;
+    }
+
+    .table tr {
+        display: table-row;
+    }
+
+    .table > tbody td {
+        display: table-cell;
+        text-align: center;
+    }
+
+    .table > tbody td:before {
+        content: "";
+        float: none;
+    }
+
+    .table .mezzo{
+        display: table-row;
+    }
+    .mezzo{
+        background-color: var(--sfondo);
+        color: var(--scritta);
+    }
+}
