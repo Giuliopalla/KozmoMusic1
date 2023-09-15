@@ -5,25 +5,24 @@
 <head>
   <jsp:include page="../partials/head.jsp">
     <jsp:param name="title" value="Benvenuti su KozmoMusic"/>
-    <jsp:param name="style" value="site,admin"/>
+    <jsp:param name="style" value="admin,site"/>
     <jsp:param name="script" value="site"/>
+    <jsp:param name="script" value="category"/>
   </jsp:include>
-
+  <script src="/KozmoMusic_war_exploded/js/category.js" defer> </script>
 </head>
 <body>
-<main class="app">
+<main class="grid-x alt" >
   <%@include file="../partials/site/sitesidebar.jsp" %>
   <section class="content grid-y">
     <%@include file="../partials/site/siteheader.jsp" %>
     <div class="body grid-y justify-center ">
-      <div class="tabella body">
+<div class="body">
         <%@include file="../partials/product/productShow.jsp"%>
-      </div>
-      <jsp:include page="../partials/paginatorHome.jsp">
-        <jsp:param name="resource" value="prodotti"/>
-      </jsp:include>
+
     </div>
     <%@include file="../partials/site/sitefooter.jsp"%>
+      </div>
   </section>
 </main>
 </body>

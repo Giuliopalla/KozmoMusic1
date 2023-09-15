@@ -56,7 +56,7 @@ public class AccountServlet extends Controller implements ErrorHandler {
                     int sizehome=prodottoDAO.countAll();
                     request.setAttribute("pages",paginatorhome.getPages(sizehome));
                     request.setAttribute("prodotti",prodottihome);
-                    request.getRequestDispatcher("/WEB-INF/views/site/home.jsp").forward(request, response);
+                    request.getRequestDispatcher("/WEB-INF/views/site/home2.jsp").forward(request, response);
                     break;
                 case "/admin":
                     authorize(request.getSession(false));

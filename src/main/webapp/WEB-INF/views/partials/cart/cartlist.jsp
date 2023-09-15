@@ -7,6 +7,7 @@
             <caption>Prodotti Carrello</caption>
             <thead>
             <tr>
+                <th>Foto</th>
                 <th>Prodotto</th>
                 <th>Prezzo Totale:${carrello.totale()}$</th>
                 <th>Quantita':${carrello.quantita()}</th>
@@ -15,6 +16,7 @@
             <tbody>
             <c:forEach items="${carrello.items}" var="cartItems">
                 <tr>
+                    <td><img src="/KozmoMusic_war_exploded${cartItems.prodotto.foto}" width="80" height="80"></td>
                     <td data-head="Nome">${cartItems.prodotto.nome}</td>
                     <td data-head="Prezzo">${cartItems.prodotto.prezzo}$</td>
                     <td data-head="Quantita">${cartItems.quantita}</td>

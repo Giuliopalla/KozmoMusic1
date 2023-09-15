@@ -8,28 +8,6 @@
         <jsp:param name="style" value="home,admin,site"/>
         <jsp:param name="script" value="site"/>
     </jsp:include>
-    <style>
-
-        nav ul {
-            height: 40vh;
-            overflow: hidden;
-            overflow-y: scroll;
-        }
-
-        .account {
-            margin-left: .5rem;
-            margin-right: 1rem;
-        }
-
-        fieldset {
-            background-color: var(--scritta);
-            height: fit-content;
-            width: 100%;
-        }
-        .product-form>*{
-            margin-bottom: .5rem;
-        }
-    </style>
 </head>
 <body>
 <main class="app">

@@ -10,7 +10,7 @@
     </jsp:include>
 </head>
 <body>
-<main class="app ">
+<main class="app">
     <section class="content grid-y">
         <%@include file="../partials/userarea/profileheader.jsp" %>
         <div class="body grid-y justify-center">

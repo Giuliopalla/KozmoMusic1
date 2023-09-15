@@ -1,11 +1,10 @@
-<table class="table product-table">
+<table class="table2 product-table">
     <tbody>
     <c:forEach items="${prodotti}" var="prodotto">
 
         <tr>
-            <td><img src="/KozmoMusic_war_exploded${prodotto.foto}" width="100" height="100"></td>
+            <td><img src="/KozmoMusic_war_exploded${prodotto.foto}" width="130" height="130"></td>
             <td><a href="/KozmoMusic_war_exploded/products/show?id=${prodotto.idprodotto}" style="text-decoration: none">${prodotto.nome}</a></td>
-            <td>${prodotto.descrizione}</td>
             <td>${prodotto.prezzo}$</td>
             <c:choose>
             <c:when test="${prodotto.quantita>0}">

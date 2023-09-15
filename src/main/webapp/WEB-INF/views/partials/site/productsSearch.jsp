@@ -20,6 +20,6 @@
             Min<input type="number" placeholder="Da" name="pricemin">
             Max<input type="number" placeholder="A" name="pricemax">
     </label>
-    <button class="btn" type="submit">Cerca</button>
+    <button class="btn2" type="submit">Cerca</button>
 </form>
 </fieldset>

@@ -4,5 +4,5 @@
 
 .product-table>thead{
     background-color: var(--secondario);
-    color: var(--scritta);
+    color: var(--primario);
 }

@@ -12,7 +12,7 @@
 <body>
 <main class="app grid-y">
   <%@include file="../partials/userarea/profilesidebar.jsp" %>
-  <section class="content grid-y justify-center">
+  <section class="content grid-x justify-center">
     <%@include file="../partials/userarea/profileheader.jsp" %>
     <div class="body grid-y justify-center">
       <div class="body tabella">

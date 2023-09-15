@@ -19,6 +19,7 @@
       <%@include file="../partials/profile/profileshow.jsp" %>
     </div>
     <%@include file="../partials/site/sitefooter.jsp" %>
+    </div>
   </section>
 </main>
 </body>

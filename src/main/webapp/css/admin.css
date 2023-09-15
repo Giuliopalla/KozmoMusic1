@@ -18,7 +18,7 @@
 }
 
 .account {
-    color: var(--scritta);
+    color: var(--primario);
 }
 
 .topbar > .command {
@@ -45,7 +45,7 @@
 
 .menu > a {
     text-decoration: none;
-    color: var(--scritta);
+    color: var(--primario);
     padding: 1rem;
 }
 
@@ -86,7 +86,6 @@
 
 .body > div {
     background-color: white;
-    box-shadow: -9px -4px 12px 3px var(--sfondo);
     margin: 10px;
     font-style: italic;
     font-weight: bold;
@@ -96,7 +95,7 @@
 .body > div > h4 {
     margin: 0;
     padding: 1rem;
-    color: var(--scritta);
+    color: var(--primario);
     background-color: var(--secondario);
 }
 
@@ -127,7 +126,7 @@ fieldset {
 }
 
 .table {
-    background-color: var(--scritta);
+    background-color: white;
     border: 1px solid var(--primario);
     height: fit-content;
     width: 100%;
@@ -143,7 +142,7 @@ fieldset {
 }
 
 .search {
-    background-color: var(--scritta);
+    background-color: var(--sfondo);
 }
 
 

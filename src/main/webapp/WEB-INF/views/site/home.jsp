@@ -13,15 +13,15 @@
 </head>
 <body>
 
-<main class="app">
+<main class="grid-x">
 
     <%@include file="../partials/site/sitesidebar.jsp" %>
     <section class="content grid-x">
         <%@include file="../partials/site/siteheader.jsp" %>
         <div class="body grid-y justify-center ">
-            <div class="tabella body">
+
             <%@include file="../partials/site/siteproduct.jsp"%>
-            </div>
+
             <jsp:include page="../partials/paginatorHome.jsp">
                 <jsp:param name="resource" value="prodotti"/>
             </jsp:include>
@@ -30,5 +30,7 @@
     </section>
 
 </main>
+
 </body>
+
 </html>

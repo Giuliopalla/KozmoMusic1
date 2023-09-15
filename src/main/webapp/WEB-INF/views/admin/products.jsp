@@ -12,7 +12,7 @@
 <body>
 <main class="app">
     <%@include file="../partials/admin/adminsidebar.jsp" %>
-    <section class="content grid-y">
+    <section class="content grid-x">
         <%@include file="../partials/admin/adminheader.jsp" %>
         <div class="body grid-y justify-center">
             <div class="body tabella">

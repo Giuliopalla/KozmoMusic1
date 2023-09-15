@@ -9,12 +9,11 @@
     </jsp:include>
 </head>
 <body>
-<main class="app">
+<main class="app grid-x">
     <%@include file="../partials/admin/adminsidebar.jsp" %>
-    <section class="content grid-y">
+    <section class="content grid-x">
         <%@include file="../partials/admin/adminheader.jsp" %>
-        <div class="body grid-x ">
-            <div class="body grid-x justify-center">
+        <div class="body grid-x justify-center">
             <jsp:include page="../partials/admin/adminstatictable.jsp">
                 <jsp:param name="title" value="Utenti Totali"/>
                 <jsp:param name="value" value="${totaleUtenti}"/>
@@ -31,7 +30,6 @@
                 <jsp:param name="title" value="Guadagno Totale"/>
                 <jsp:param name="value" value="${totaleGuadagno}$"/>
             </jsp:include>
-            </div>
         </div>
     </section>
 </main>
