@@ -12,17 +12,16 @@
   <script src="/KozmoMusic_war_exploded/js/category.js" defer> </script>
 </head>
 <body>
-<main class="grid-x alt" >
+<main class=" grid-x app alt" >
   <section class="content grid-y">
     <%@include file="../partials/site/siteheader.jsp" %>
     <div class="body grid-y justify-center ">
-    <div class="body">
+      <div class="body tabella">
         <%@include file="../partials/product/productShow.jsp"%>
-
-    </div>
-
+     </div>
     </div>
   </section>
 </main>
+<%@include file="../partials/site/sitefooter.jsp"%>
 </body>
 </html>
