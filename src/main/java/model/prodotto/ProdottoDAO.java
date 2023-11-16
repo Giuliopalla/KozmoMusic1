@@ -125,7 +125,9 @@ public class ProdottoDAO {
         try (Connection con = ConPool.getConnection()) {
             int iscd = prodotto.isIscd() ? 1 : 0;
             Statement s = con.createStatement();
-            String query = "update prodotto set nome='" + prodotto.getNome() + "', descrizione='" + prodotto.getDescrizione() + "', prezzo='" + prodotto.getPrezzo() + "',foto='" + prodotto.getFoto() + "', iscd='" + iscd + "', quantita='" + prodotto.getQuantita() + "' where idprodotto='" + prodotto.getIdprodotto() + "';";
+            String name= prodotto.getNome().replace("'","''");
+            String descrizione= prodotto.getDescrizione().replace("'","''");
+            String query = "update prodotto set nome='" + name + "', descrizione='" + descrizione + "', prezzo='" + prodotto.getPrezzo() + "',foto='" + prodotto.getFoto() + "', iscd='" + iscd + "', quantita='" + prodotto.getQuantita() + "' where idprodotto='" + prodotto.getIdprodotto() + "';";
             s.executeUpdate(query);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -244,7 +246,8 @@ public class ProdottoDAO {
     public List<Prodotto> search(Parametri parametri, Paginator paginator) {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT distinct prodotto.idprodotto, nome, descrizione, prezzo, foto, iscd, quantita FROM prodotto INNER JOIN prodotti_categoria on prodotto.idprodotto=prodotti_categoria.idprodotto");
-        sb.append(" WHERE prodotto.nome LIKE '%" + parametri.getName() + "%' ");
+        String name= parametri.getName().replace("'","''");
+        sb.append(" WHERE prodotto.nome LIKE '%" + name + "%' ");
         if (parametri.getCategoria() != -1) {
             sb.append("AND prodotti_categoria.idcategoria='" + parametri.getCategoria() + "' ");
         }
@@ -283,7 +286,8 @@ public class ProdottoDAO {
     public int searchCount(Parametri parametri) {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT distinct prodotto.idprodotto, nome, descrizione, prezzo, foto, iscd, quantita FROM prodotto INNER JOIN prodotti_categoria on prodotto.idprodotto=prodotti_categoria.idprodotto");
-        sb.append(" WHERE prodotto.nome LIKE '%" + parametri.getName() + "%' ");
+        String name= parametri.getName().replace("'","''");
+        sb.append(" WHERE prodotto.nome LIKE '%" + name + "%' ");
         if (parametri.getCategoria() != -1) {
             sb.append("AND prodotti_categoria.idcategoria='" + parametri.getCategoria() + "' ");
         }

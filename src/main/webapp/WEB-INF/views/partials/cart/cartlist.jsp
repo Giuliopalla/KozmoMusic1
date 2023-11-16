@@ -11,6 +11,7 @@
                 <th>Prodotto</th>
                 <th>Prezzo Totale:${carrello.totale()}$</th>
                 <th>Quantita':${carrello.quantita()}</th>
+                <th></th>
             </tr>
             </thead>
             <tbody>

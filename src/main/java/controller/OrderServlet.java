@@ -115,6 +115,14 @@ public class OrderServlet extends Controller implements ErrorHandler {
                     tmpOrdine = ordineDAO.doRetrieveById(Integer.parseInt(request.getParameter("ordineid")));
                     tmpOrdine.setProdottoList(ordineDAO.doRetriveProdottiOrdine(tmpOrdine.getIdordine()));
                     request.setAttribute("ordine", tmpOrdine);
+                    request.getRequestDispatcher("/WEB-INF/views/profile/orderInfo.jsp").forward(request, response);
+                    break;
+                case "/infoadmin":
+                    authenticate(request.getSession(false));
+                    Ordine tmpOrdine1;
+                    tmpOrdine1 = ordineDAO.doRetrieveById(Integer.parseInt(request.getParameter("ordineid")));
+                    tmpOrdine1.setProdottoList(ordineDAO.doRetriveProdottiOrdine(tmpOrdine1.getIdordine()));
+                    request.setAttribute("ordine", tmpOrdine1);
                     request.getRequestDispatcher("/WEB-INF/views/admin/orderInfo.jsp").forward(request, response);
                     break;
                 default:

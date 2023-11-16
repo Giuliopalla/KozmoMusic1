@@ -4,12 +4,12 @@
 <head>
     <jsp:include page="../partials/head.jsp">
         <jsp:param name="title" value="Home Admin"/>
-        <jsp:param name="style" value="admin,home"/>
+        <jsp:param name="style" value="site,table"/>
         <jsp:param name="script" value="admin"/>
     </jsp:include>
 </head>
 <body>
-<main class="app grid-x">
+<main class=" grid-x ">
     <%@include file="../partials/admin/adminsidebar.jsp" %>
     <section class="content grid-x">
         <%@include file="../partials/admin/adminheader.jsp" %>
@@ -33,5 +33,6 @@
         </div>
     </section>
 </main>
+<%@include file="../partials/admin/adminfooter.jsp"%>
 </body>
 </html>

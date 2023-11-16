@@ -7,7 +7,7 @@
                         <c:choose>
                             <c:when test="${prodotto.quantita>0}">
                             <form method="post" action="/KozmoMusic_war_exploded/cart/add">
-                                <input type="number" min="1" max="${prodotto.quantita}" name="productquantity"
+                                <input class="amp" type="number" min="1" max="${prodotto.quantita}" name="productquantity"
                                        placeholder="MAX ${prodotto.quantita}">
                                 <input type="hidden" name="info" value="1"/>
                                 <input type="hidden" value="${prodotto.idprodotto}" name="idprodotto"/>
@@ -27,8 +27,8 @@
                 <dd>Descrizione:</dd>
                 <dd>${prodotto.descrizione}</dd>
                 <dd>Prezzo:${prodotto.prezzo}$ </dd>
-                <dd> <button class="btn amp">
-                    <a href="/KozmoMusic_war_exploded/accounts/home" style="text-decoration: none">Torna alla home</a></button></dd>
+                <dd> <a href="/KozmoMusic_war_exploded/accounts/home" style="text-decoration: none"><button class="btn amp">
+                    Torna alla home</button></a></dd>
             </dl>
 
 

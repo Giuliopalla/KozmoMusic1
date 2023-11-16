@@ -1,4 +1,4 @@
-<form class=" grid-x justify-center"  action="/KozmoMusic_war_exploded/accounts/login" method="post" name="loginform">
+<form   action="/KozmoMusic_war_exploded/accounts/login" method="post" name="loginform">
     <fieldset class="grid-y  cell product-form">
         <legend>Pannello Login</legend>
         <c:if test="${not empty alert}">

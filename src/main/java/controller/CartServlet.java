@@ -45,11 +45,10 @@ public class CartServlet extends Controller{
                             request.getSession(true).setAttribute("carrello",new Carrello(new ArrayList<>()));
                         }
                         getSessionCart(request.getSession(false)).addProduct(optProd,quantity);
-                        System.out.println(info);
                         if(info!=null){
                             response.sendRedirect("/KozmoMusic_war_exploded/products/show?id="+id);
                         }else{
-                            response.sendRedirect("/KozmoMusic_war_exploded/accounts/home");
+                           response.sendRedirect("/KozmoMusic_war_exploded/accounts/home");
                         }
                     }else{
                         notFound();

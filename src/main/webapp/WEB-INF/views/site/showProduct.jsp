@@ -5,7 +5,7 @@
 <head>
   <jsp:include page="../partials/head.jsp">
     <jsp:param name="title" value="Benvenuti su KozmoMusic"/>
-    <jsp:param name="style" value="admin,site"/>
+    <jsp:param name="style" value="site,table"/>
     <jsp:param name="script" value="site"/>
     <jsp:param name="script" value="category"/>
   </jsp:include>
@@ -13,7 +13,6 @@
 </head>
 <body>
 <main class="grid-x alt" >
-  <%@include file="../partials/site/sitesidebar.jsp" %>
   <section class="content grid-y">
     <%@include file="../partials/site/siteheader.jsp" %>
     <div class="body grid-y justify-center ">
@@ -21,9 +20,10 @@
         <%@include file="../partials/product/productShow.jsp"%>
 
     </div>
-    <%@include file="../partials/site/sitefooter.jsp"%>
+
       </div>
   </section>
 </main>
+<%@include file="../partials/site/sitefooter.jsp"%>
 </body>
 </html>

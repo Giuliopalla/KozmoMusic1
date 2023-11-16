@@ -5,21 +5,22 @@
 <head>
     <jsp:include page="../partials/head.jsp">
         <jsp:param name="title" value="Register"/>
-        <jsp:param name="style" value="admin,site"/>
+        <jsp:param name="style" value="site,table"/>
         <jsp:param name="script" value="site"/>
     </jsp:include>
 </head>
 <body>
-<main class="app ">
+<main class="app alt">
     <section class="content grid-y">
         <%@include file="../partials/userarea/profileheader.jsp" %>
         <div class="body grid-y justify-center">
-            <div class="body">
+            <div class="body tabella">
                 <%@include file="../partials/site/siteregister.jsp" %>
             </div>
-            <%@include file="../partials/site/sitefooter.jsp" %>
+        </div>
     </section>
 </main>
+    <%@include file="../partials/site/sitefooter.jsp" %>
 </body>
 </html>
 

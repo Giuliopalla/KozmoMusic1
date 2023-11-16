@@ -1,21 +1,21 @@
+<table class="table product-table">
+    <caption>Profilo Personale</caption>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>E-mail</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-head="id">${utente1.id}</td>
+            <td data-head="nome">${utente1.nome}</td>
+            <td data-head="cognome">${utente1.cognome}</td>
+            <td data-head="e-mail">${utente1.email}</td>
+    </tbody>
+</table>
 <form action="/KozmoMusic_war_exploded/accounts/update">
-    <fieldset class="grid-y cell product-form">
-            <legend>Profilo Personale</legend>
-        <label class="field cell w50">
-            <b>Nome:</b>${utente1.nome}
-        </label>
-        <label class="field cell w50">
-            <b>Id:</b>${utente1.id}
-        </label>
-        <label class="field cell w50">
-            <b>Cognome:</b>${utente1.cognome}
-        </label>
-        <label class="field cell w50">
-            <b>Email:</b>${utente1.email}
-        </label>
-
-
-        <button class="btn">Aggiorna Dati</button>
-    </fieldset>
+    <button class="btn" type="submit">Aggiorna Dati</button>
 </form>
-

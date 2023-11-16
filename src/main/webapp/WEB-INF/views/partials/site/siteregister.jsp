@@ -1,5 +1,5 @@
 <form class="grid-x justify-center" action="/KozmoMusic_war_exploded/accounts/create" method="post" name="registerform">
-    <fieldset class="grid-y product-form cell">
+<fieldset class="grid-y product-form cell">
         <legend>Pannello registrazione</legend>
         <c:if test="${not empty alert}">
             <%@include file="../../partials/alert.jsp" %>

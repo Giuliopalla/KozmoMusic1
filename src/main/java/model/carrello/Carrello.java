@@ -4,8 +4,12 @@ package model.carrello;
 
 import model.prodotto.Prodotto;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.Optional;
+
+import static java.lang.Math.round;
 
 public class Carrello {
 
@@ -36,7 +40,9 @@ public class Carrello {
         for (CartItems item : items) {
             totale += item.totale();
         }
-        return totale;
+        BigDecimal bd=new BigDecimal(totale).setScale(2, RoundingMode.HALF_UP);
+        double tot=bd.doubleValue();
+        return tot;
     }
 
     public boolean addProduct(Prodotto prodotto, int quantita) {

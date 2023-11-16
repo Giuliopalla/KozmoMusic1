@@ -21,6 +21,7 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/site/siteproduct.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/site" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/home.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site/signup.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/site" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
       </map>
     </option>

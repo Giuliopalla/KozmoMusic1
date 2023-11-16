@@ -5,7 +5,7 @@
 <head>
     <jsp:include page="../partials/head.jsp">
         <jsp:param name="title" value="Benvenuti su KozmoMusic"/>
-        <jsp:param name="style" value="site,admin"/>
+        <jsp:param name="style" value="site,table"/>
         <jsp:param name="script" value="site"/>
         <jsp:param name="script" value="category"/>
     </jsp:include>
@@ -26,11 +26,11 @@
                 <jsp:param name="resource" value="prodotti"/>
             </jsp:include>
         </div>
-        <%@include file="../partials/site/sitefooter.jsp"%>
+
     </section>
 
 </main>
-
+<%@include file="../partials/site/sitefooter.jsp"%>
 </body>
 
 </html>

@@ -5,13 +5,12 @@
 <head>
   <jsp:include page="../partials/head.jsp">
     <jsp:param name="title" value="Lista Ordini"/>
-    <jsp:param name="style" value="admin,products,home"/>
+    <jsp:param name="style" value="site,table"/>
     <jsp:param name="script" value="admin"/>
   </jsp:include>
-  </style>
 </head>
 <body>
-<main class="app">
+<main class="app alt">
   <%@include file="../partials/admin/adminsidebar.jsp" %>
   <section class="content grid-x">
     <%@include file="../partials/admin/adminheader.jsp" %>
@@ -23,8 +22,8 @@
         <jsp:param name="resource" value="ordini"/>
       </jsp:include>
     </div>
-    <%@include file="../partials/admin/adminfooter.jsp"%>
   </section>
 </main>
+<%@include file="../partials/admin/adminfooter.jsp"%>
 </body>
 </html>

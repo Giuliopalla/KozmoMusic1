@@ -149,7 +149,6 @@ public class OrdineDAO {
         List<Ordine> lista = new ArrayList<>();
         Ordine ordine;
         try (Connection con = ConPool.getConnection()) {
-            Statement s=con.createStatement();
             PreparedStatement ps = con.prepareStatement(
                     "SELECT *FROM ordine Where utente_id='"+id+"' LIMIT ?,?",
                     Statement.RETURN_GENERATED_KEYS);
@@ -174,10 +173,8 @@ public class OrdineDAO {
     public Hashtable<Prodotto,Integer> doRetriveProdottiOrdine(int id){
         Hashtable<Prodotto,Integer> prodotti=new Hashtable<>();
         int quantita;
-        List<Prodotto> products=new ArrayList<>();
         Prodotto prodotto;
         try(Connection con=ConPool.getConnection()){
-            Statement s=con.createStatement();
             PreparedStatement ps = con.prepareStatement(
                     "SELECT *FROM prodotto INNER JOIN ordine_prodotti on prodotto.idprodotto=ordine_prodotti.idprodotto where ordine_prodotti.idordine='"+id+"'",
                     Statement.RETURN_GENERATED_KEYS);
@@ -194,7 +191,6 @@ public class OrdineDAO {
                 quantita=rs.getInt(11);
                 prodotti.put(prodotto,quantita);
             }
-
             con.close();
             return prodotti;
         } catch (SQLException e){

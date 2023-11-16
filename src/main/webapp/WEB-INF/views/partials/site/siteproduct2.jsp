@@ -22,8 +22,10 @@
 
 
           </form>
-          <button class="btn amp" ><a href="/KozmoMusic_war_exploded/products/show?id=${prodotto.idprodotto}" style="text-decoration: none;">Dettagli</a>
+          <a href="/KozmoMusic_war_exploded/products/show?id=${prodotto.idprodotto}" style="width:100%; text-decoration: none;">
+          <button class="btn amp borderbtn" >Dettagli
           </button>
+          </a>
         </c:when>
         <c:otherwise>
           PRODOTTO NON DISPONIBILE
