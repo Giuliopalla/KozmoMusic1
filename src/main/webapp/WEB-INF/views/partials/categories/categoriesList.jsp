@@ -2,7 +2,7 @@
     <button class="btn">Add Category</button>
 </form>
 <table class="table product-table">
-    <caption>Lista Utenti</caption>
+    <caption>Lista Categorie</caption>
     <thead>
     <tr>
         <th>Id Categoria</th>

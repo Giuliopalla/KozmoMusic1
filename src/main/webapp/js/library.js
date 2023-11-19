@@ -11,7 +11,7 @@ function ajax(options){
         if(xhr.status>=100 && xhr.status<400){
             options.success(JSON.parse(xhr.responseText));
         }else{
-            options.success(JSON.parse(xhr.responseText));
+            options.error(JSON.parse(xhr.responseText));
         }
     };
     xhr.open(options.method,options.url,true);
